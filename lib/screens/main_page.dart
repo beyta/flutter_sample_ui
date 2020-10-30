@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fluttersampleui/functions/navigation.dart';
+import 'package:fluttersampleui/screens/column_page.dart';
+import 'package:fluttersampleui/screens/row_page.dart';
+import 'package:fluttersampleui/screens/rowcolumn_page.dart';
 
 //Import Style Library
 import 'package:fluttersampleui/styles/main_style.dart';
@@ -114,6 +117,39 @@ class _MainPageState extends State<MainPage> {
               ),
               onTap: () {
                 Navigator.pushNamed(context, NewsPage.id);
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text(
+                'Column Sample',
+                style: myListStyleText,
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, ColumnPage.id);
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text(
+                'Row Sample',
+                style: myListStyleText,
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, RowPage.id);
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text(
+                'Row Column Sample',
+                style: myListStyleText,
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, RowColumnPage.id);
               },
             ),
           ),
